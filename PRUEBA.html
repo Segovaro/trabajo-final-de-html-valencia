@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Genshin Wiki</title>
+    <link rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">     
+    
+    
+    
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #dadada;
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/img1.jpg);
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(167, 93%, 55%, 0.664)), url(../img/img1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 580000%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #4c4c4d;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(116, 97, 136, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #3dc3d4c0;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+</style>
+
+
+
+
+<script src="slider.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://genshin.hoyoverse.com/es/">Descargar</a>
+            <a href="https://genshin-impact.fandom.com/es/wiki/Personajes">Personajes</a>
+            <a href="https://genshin-impact.fandom.com/es/wiki/Teyvat">Naciones</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Genshin Impact</h1>
+            <h2>Sumeru</h2>
+        </section>
+        <div class="wave" style="height: 190px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Regiones de Teytat</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Mondstadt (Anemo)</h3>
+                    <p> Una ciudad de la libertad que se encuentra al noreste de Teyvat. Entre montañas y llanuras abiertas, la brisa despreocupada lleva el aroma de los dientes de león, un regalo del dios Anemo, Barbatos, a través del Lago de Sidra hasta Mondstadt, que se encuentra en una isla en el medio del lago.</p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Mondstadt?so=search">Mondstadt</a><br>
+                    <img src="img/monstad.jpg">
+                    <h3><span>2</span>Liyue (Geo)</h3>
+                    <p> Una ciudad con un puerto próspero situado al este de Teyvat. Liyue yace imponente entre faldas montañosas, bosques de piedra, bastas planicies y una costa llena de vida, que conforman una tierra llena de riquezas, con cambios de estación claramente definidos y llenos de color. ¿Cuántos obsequios del Arconte Geo yacerán enterrados entre sus montañas?</p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Liyue">Liyue</a><br>
+                    <img src="img/liyue.jpg">
+                    <h3><span>3</span>Inazuma (Electro)</h3>
+                    <p>Un archipiélago situado en el extremo oriente de Teyvat. Encara tormentas perpetuas, adéntrate en la isla de las flores de cerezo, en sus playas, los imponentes acantilados y las solitarias montañas, y presencia la eternidad perseguida por Su Excelencia, la todapoderosa Narukami.</p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Inazuma">Inazuma</a><br>
+                    <img src="img/inazuma.jpg" width="250">
+                    <h3><span>4</span>Sumeru (Dendro)</h3>
+                    <p>La nación de eruditos situada en el medio oeste de Teyvat. Una tierra exótica en la que coexisten exuberantes bosques tropicales y áridos desiertos, donde crecen y se marchitan innumerables frutos de la sabiduría. Todo viajero que llegue a esta nación podrá adquirir valiosos conocimientos atravesando el bosque y subiendo los escalones que conducen hacia el conocimiento o adentrándose en el desierto y descubriendo sus antiguas ruinas. </p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Sumeru">Sumeru</a><br>
+                    <img src="img/sumeru.jpg" width="250">
+                    <h3><span>4</span>Fontaine (Hydro)</h3>
+                    <p> A la Diosa de la Justicia le encanta el espectáculo en la sala del tribunal y ansía juzgar a los demás dioses. Pero incluso ella entiende que no debe hacerse enemiga de lo divino.  </p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Fontaine?so=search">Fontaine</a><br>
+                    <img src="img/fontaine-jpg.png">
+                    <h3><span>4</span>Natlan (Pyro)</h3>
+                    <p>Las reglas de la guerra están tejidas en el útero: los vencedores brillarán como las ascuas, mientras que los perdedores se convertirán en cenizas. Cuando la Diosa de la Guerra comparta este secreto con el Viajero, es porque tiene sus razones </p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Natlán?so=search">Natlan</a><br>
+                    <img src="img/pyro.jpg" width="250">
+                    <h3><span>4</span>Snezhnaya (Cryo)</h3>
+                    <p>Snezhnaya es un nación propenso a las tormentas de invierno. Nadia afirma que las tormentas de nieve pueden durar un mes seguido y, a pesar del peligro, su gente mira hacia el cielo, feliz de estar viva. Tartaglia afirmó que si la gente no seguiría moviéndose afuera, morirían congelados.</p>
+                    <a href="https://genshin-impact.fandom.com/es/wiki/Snezhnaya">Snezhnaya</a>
+                    <img src="img/cryo.jpg" width="250">
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Personajes más populares</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/venti.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Venti?so=search">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/Zhongli.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Zhongli?so=search">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/shogun.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Shogun_Raiden?so=search">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/nahida.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Nahida">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/miko.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Yae_Miko">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/kazuha.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Kaedehara_Kazuha">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/xiao.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Xiao">Clickea</a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/hutao.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://genshin-impact.fandom.com/es/wiki/Hu_Tao">Clickea</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+            
+            <h2 class="titulo">HoYoverse</h2>
+            <div class="cards">
+                <a href="https://www.hoyoverse.com/es-es">==></a>
+                <div class="card">
+                    <img src="img/hoyoverse.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>HoYoverse</h4>
+                        <p>miHoYo es un estudio de desarrollo de videojuegos chino con sede en Shanghái, China.</p>
+                    </div>
+                </div>
+                <div class="card">
+                <a href="https://genshin.hoyoverse.com/pc-launcher/?utm_source=NA_google_GLB_search_keywords_20210108&mhy_trace_channel=ga_channel&new=1&gclid=Cj0KCQiA7bucBhCeARIsAIOwr-8aJjgMfjH8S5kpGx7l8qp-cmXsiInxo-OlBjr6ma2An2UHJLqibu0aAvKHEALw_wcB#/">==></a>
+                    <img src="img/genshin.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Genshin Impact</h4>
+                        <p>Genshin Impact es un videojuego de rol de acción de mundo abierto y gratuito, con una mecánica de monetización de gacha para conseguir elementos adicionales como personajes especiales y armas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>hoyover@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>privacy@hoyoverse.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>Shanghái, China</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Sebastian Valencia Robalino</h2>
+    </footer>
+</body>
+
+</html>
